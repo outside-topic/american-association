@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Association for Coaches | Premium Professional Coaching</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Inter & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="logo-placeholder">AAC LOGO</div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown multilevel">
+                            <a class="nav-link dropdown-toggle" href="#" id="membershipDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Membership
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="membershipDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Trainer</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Professional</a></li>
+                                        <li><a class="dropdown-item" href="#">Fellow</a></li>
+                                        <li><a class="dropdown-item" href="#">Associate</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Coach</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Professional</a></li>
+                                        <li><a class="dropdown-item" href="#">Fellow</a></li>
+                                        <li><a class="dropdown-item" href="#">Associate</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Affiliation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Slider Section -->
+        <section class="hero-section">
+            <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=1920');">
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center">
+                                <div class="col-lg-8">
+                                    <h1 class="hero-title">Elevate Your Coaching Career</h1>
+                                    <p class="hero-subtitle">World-class standards, global recognition, and a community of excellence.</p>
+                                    <div class="hero-buttons">
+                                        <a href="#" class="btn btn-primary btn-lg">Join AAC Today</a>
+                                        <a href="#" class="btn btn-outline-light btn-lg">Explore Programs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="padding-section bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-tag">Why Join AAC</span>
+                    <h2 class="section-title">The Benefits of Professional Membership</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                            <h3>Global Recognition</h3>
+                            <p>Gain credibility with an internationally recognized coaching certification and designation.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>Network Access</h3>
+                            <p>Connect with a worldwide community of professional coaches and trainers for collaboration.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Continuous Learning</h3>
+                            <p>Access exclusive webinars, workshops, and research to stay at the forefront of the industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Tiers Preview -->
+        <section class="padding-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-tag">Take the Next Step</span>
+                    <h2 class="section-title">Explore Membership Categories</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="membership-card bronze">
+                            <div class="card-content">
+                                <h3>Trainer Membership</h3>
+                                <p>For professionals dedicated to training and developing next-generation coaches.</p>
+                                <ul class="tier-list">
+                                    <li>Professional Trainer</li>
+                                    <li>Fellow Trainer</li>
+                                    <li>Associate Trainer</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">View Requirements</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="membership-card gold">
+                            <div class="card-content">
+                                <h3>Coach Membership</h3>
+                                <p>For practicing coaches seeking to advance their skills and global standing.</p>
+                                <ul class="tier-list">
+                                    <li>Professional Coach</li>
+                                    <li>Fellow Coach</li>
+                                    <li>Associate Coach</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Join as Coach</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Trainer Membership Overview -->
+        <section id="trainer-membership" class="padding-section bg-light">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-7">
+                        <span class="section-tag">Trainer Excellence</span>
+                        <h2 class="section-title">Certification Levels for Educators</h2>
+                        <p class="section-desc">Designated for professionals who demonstrate mastery in coaching pedagogy and learner development. Choose the tier that matches your expertise.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tier-card trainer-card">
+                            <div class="tier-badge">Associate</div>
+                            <div class="tier-icon"><i class="fas fa-layer-group"></i></div>
+                            <h3>Associate Trainer</h3>
+                            <p>Ideal for emerging educators starting their journey in professional coaching instruction.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check-circle"></i> AAC Member Status</li>
+                                <li><i class="fas fa-check-circle"></i> Foundation Certification</li>
+                                <li><i class="fas fa-check-circle"></i> Mentorship Access</li>
+                            </ul>
+                            <a href="#" class="tier-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tier-card trainer-card featured">
+                            <div class="tier-badge">Professional</div>
+                            <div class="tier-icon"><i class="fas fa-shield-halved"></i></div>
+                            <h3>Professional Trainer</h3>
+                            <p>For established trainers with a proven track record of developing high-performance coaches.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check-circle"></i> 5+ Years Experience</li>
+                                <li><i class="fas fa-check-circle"></i> Advanced Methods</li>
+                                <li><i class="fas fa-check-circle"></i> Global Recognition</li>
+                            </ul>
+                            <a href="#" class="tier-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tier-card trainer-card">
+                            <div class="tier-badge">Fellow</div>
+                            <div class="tier-icon"><i class="fas fa-certificate"></i></div>
+                            <h3>Fellow Trainer</h3>
+                            <p>The highest designation for industry leaders shaping the future of coaching education.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check-circle"></i> 10+ Years Experience</li>
+                                <li><i class="fas fa-check-circle"></i> Industry Research</li>
+                                <li><i class="fas fa-check-circle"></i> Master Faculty Status</li>
+                            </ul>
+                            <a href="#" class="tier-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Coach Membership Overview -->
+        <section id="coach-membership" class="padding-section">
+            <div class="container">
+                <div class="row align-items-center mb-5 text-end">
+                    <div class="col-12 ms-auto">
+                        <span class="section-tag">Coaching Practice</span>
+                        <h2 class="section-title">Designations for Practitioners</h2>
+                        <p class="section-desc">Standardized levels of coaching proficiency recognized by organizations worldwide. Elevate your practice today.</p>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-end">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tier-card coach-card">
+                            <div class="tier-badge">Associate</div>
+                            <div class="tier-icon"><i class="fas fa-star-half-stroke"></i></div>
+                            <h3>Associate Coach</h3>
+                            <p>Entry-level professional designation for coaches building their foundational practice.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check-circle"></i> 100+ Coaching Hours</li>
+                                <li><i class="fas fa-check-circle"></i> Ethical Standards</li>
+                                <li><i class="fas fa-check-circle"></i> Peer Network</li>
+                            </ul>
+                            <a href="#" class="tier-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tier-card coach-card featured">
+                            <div class="tier-badge">Professional</div>
+                            <div class="tier-icon"><i class="fas fa-star"></i></div>
+                            <h3>Professional Coach</h3>
+                            <p>The core practitioner level for full-time professional coaches seeking global impact.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check-circle"></i> 500+ Coaching Hours</li>
+                                <li><i class="fas fa-check-circle"></i> Specialty Tracks</li>
+                                <li><i class="fas fa-check-circle"></i> Directory Listing</li>
+                            </ul>
+                            <a href="#" class="tier-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="tier-card coach-card">
+                            <div class="tier-badge">Fellow</div>
+                            <div class="tier-icon"><i class="fas fa-crown"></i></div>
+                            <h3>Fellow Coach</h3>
+                            <p>Master practitioner level for coaches who have achieved the highest standards of excellence.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check-circle"></i> 2500+ Coaching Hours</li>
+                                <li><i class="fas fa-check-circle"></i> Mentorship Rights</li>
+                                <li><i class="fas fa-check-circle"></i> Industry Leadership</li>
+                            </ul>
+                            <a href="#" class="tier-btn">Join Now <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container text-center">
+                <h2 class="cta-title">Ready to Transform Your Coaching Journey?</h2>
+                <p class="cta-desc">Join thousands of professionals worldwide who are setting the standard for excellence.</p>
+                <a href="#" class="btn btn-secondary btn-lg px-5">Get Started Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo mb-3">AAC LOGO</div>
+                    <p class="footer-text">Advancing the art, science, and practice of professional coaching globally through standard-setting and community building.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Membership</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Professional Trainer</a></li>
+                        <li><a href="#">Fellow Coach</a></li>
+                        <li><a href="#">Associate Membership</a></li>
+                        <li><a href="#">Affiliation Programs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Way, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> info@aac-coaches.org</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright">&copy; 2025 American Association for Coaches. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
