@@ -33,8 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
+            document.querySelector('header').style.background = "transparent"
         } else {
             navbar.classList.remove('scrolled');
+            document.querySelector('header').style.background = "white"
         }
     });
 

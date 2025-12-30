@@ -21,14 +21,26 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 /* --- Navbar Styles --- */
 .navbar {
-    padding: 20px 0;
+    /* padding: 20px 0; */
     transition: var(--transition);
     background: transparent;
 }
 
 header{
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255, 1);
     backdrop-filter: blur(10px);
+}
+
+.logo{
+    height: auto;
+    width: 60px
+}
+
+.logo img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
 }
 
 header.fixed-top{
@@ -40,8 +52,9 @@ header.fixed-top{
 
 .navbar.scrolled {
     padding: 10px 0;
-    background: rgba(18, 29, 95, 0.8);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+    border: 2px solid var(--primary-color);
 }
 
 .navbar-brand .logo-placeholder {
@@ -52,7 +65,7 @@ header.fixed-top{
 }
 
 .nav-link {
-    color: var(--white);
+    color: var(--primary-color);
     font-weight: 500;
     margin: 0 10px;
     transition: var(--transition);

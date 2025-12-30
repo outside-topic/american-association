@@ -19,19 +19,27 @@
     <header id="header" class="fixed-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <div class="logo-placeholder">AAC LOGO</div>
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
                         <li class="nav-item dropdown multilevel">
-                            <a class="nav-link dropdown-toggle active" href="#" id="membershipDropdown" data-bs-toggle="dropdown">Membership</a>
-                            <ul class="dropdown-menu">
+                            <a class="nav-link dropdown-toggle" href="#" id="membershipDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Membership
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="membershipDropdown">
                                 <li class="dropdown-submenu">
                                     <a class="dropdown-item dropdown-toggle" href="membership-trainer.html">Trainer</a>
                                     <ul class="dropdown-menu">
@@ -41,7 +49,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle active" href="membership-coach.html">Coach</a>
+                                    <a class="dropdown-item dropdown-toggle" href="membership-coach.html">Coach</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Professional</a></li>
                                         <li><a class="dropdown-item" href="#">Fellow</a></li>
@@ -50,10 +58,11 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Affiliation</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                        <li class="nav-item ms-lg-3">
-                            <a href="#application-form" class="btn btn-secondary btn-sm px-4 rounded-pill">Apply Now</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="affiliation.html">Affiliation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
