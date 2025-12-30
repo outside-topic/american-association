@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #0c1a2c;
-    --secondary-color: #bfa37c;
-    --accent-color: #d1b894;
+    --primary-color: #121d5f;
+    --secondary-color: #c70039;
+    --accent-color: #e60042;
     --text-color: #333333;
     --light-bg: #f8f9fa;
     --white: #ffffff;
@@ -40,7 +40,7 @@ header.fixed-top{
 
 .navbar.scrolled {
     padding: 10px 0;
-    background: rgba(12, 26, 44, 0.95);
+    background: rgba(18, 29, 95, 0.95);
     backdrop-filter: blur(10px);
 }
 
@@ -312,11 +312,11 @@ header.fixed-top{
 }
 
 .membership-card.bronze {
-    background: linear-gradient(135deg, #0c1a2c 0%, #1a2a3c 100%);
+    background: linear-gradient(135deg, #121d5f 0%, #1a2a6c 100%);
 }
 
 .membership-card.gold {
-    background: linear-gradient(135deg, #0c1a2c 0%, #162436 100%);
+    background: linear-gradient(135deg, #121d5f 0%, #0d1647 100%);
 }
 
 .membership-card::before {
@@ -488,12 +488,15 @@ header.fixed-top{
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 20px;
+    color: var(--white);
 }
+
 
 .cta-desc {
     font-size: 1.2rem;
     margin-bottom: 40px;
     opacity: 0.9;
+    color: var(--white);
 }
 
 .btn-secondary {
