@@ -66,6 +66,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Testimonial Swiper
+    const testimonialSwiper = new Swiper('.testimonialSwiper', {
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        slidesPerView: 1,
+        spaceBetween: 30
+    });
+
     // GSAP Animations
     gsap.registerPlugin(ScrollTrigger);
 
@@ -123,6 +138,53 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power3.out"
     });
 
+    // New Sections Animations
+    gsap.from('.leadership-section .leadership-image-wrapper', {
+        scrollTrigger: {
+            trigger: '.leadership-section',
+            start: 'top 80%',
+        },
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: "power3.out"
+    });
 
+    gsap.from('.leadership-section .col-lg-6:last-child *', {
+        scrollTrigger: {
+            trigger: '.leadership-section',
+            start: 'top 80%',
+        },
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
+
+    // Testimonials and FAQ Animations
+    gsap.from('.testimonials-section .container *', {
+        scrollTrigger: {
+            trigger: '.testimonials-section',
+            start: 'top 85%',
+        },
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "power3.out"
+    });
+
+    gsap.from('#faqAccordion .accordion-item', {
+        scrollTrigger: {
+            trigger: '#faqAccordion',
+            start: 'top 90%',
+        },
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
 
 });

@@ -477,6 +477,150 @@ header.fixed-top{
     color: var(--white);
 }
 
+/* --- Leadership Section --- */
+.leadership-section {
+    background: var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.leadership-image-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.leadership-image-wrapper img {
+    border: 10px solid rgba(255,255,255,0.05);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.experience-badge .number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.experience-badge .text {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.color-crimson {
+    color: var(--secondary-color);
+}
+
+/* --- Testimonials --- */
+.testimonials-section {
+    padding: 100px 0;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    margin: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.quote-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    opacity: 0.2;
+}
+
+.testimonial-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.author-info h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.author-info p {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--secondary-color) !important;
+}
+
+/* --- FAQ Section --- */
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    background: transparent;
+}
+
+.accordion-button {
+    background: var(--white);
+    padding: 25px 30px;
+    border-radius: 15px !important;
+    font-weight: 700;
+    color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    font-family: 'Inter', sans-serif;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--white);
+    color: var(--secondary-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23121d5f'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c70039'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+    padding: 30px;
+    color: #666;
+    line-height: 1.7;
+}
+
 /* --- CTA Section --- */
 .cta-section {
     padding: 100px 0;
