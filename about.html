@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | American Association for Coaches</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Inter & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar (Same as index) -->
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-placeholder">AAC LOGO</div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown multilevel">
+                            <a class="nav-link dropdown-toggle" href="#" id="membershipDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Membership
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="membershipDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="membership-trainer.html">Trainer</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Professional</a></li>
+                                        <li><a class="dropdown-item" href="#">Fellow</a></li>
+                                        <li><a class="dropdown-item" href="#">Associate</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="membership-coach.html">Coach</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Professional</a></li>
+                                        <li><a class="dropdown-item" href="#">Fellow</a></li>
+                                        <li><a class="dropdown-item" href="#">Associate</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="affiliation.html">Affiliation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(18, 29, 95, 0.8), rgba(18, 29, 95, 0.8)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1920');">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="display-3 fw-bold text-white mb-3">About AAC</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item active text-crimson" aria-current="page">About Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="padding-section">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <span class="section-tag">Our Foundation</span>
+                        <h2 class="section-title">Driven by Excellence, Guided by Ethics</h2>
+                        <p class="section-desc">The American Association for Coaches was founded to bridge the gap between coaching practice and international standards. We empower professionals through rigorous certification and a supportive global community.</p>
+                        
+                        <div class="row g-4 mt-2">
+                            <div class="col-sm-6">
+                                <div class="icon-box-small">
+                                    <i class="fas fa-bullseye color-crimson"></i>
+                                    <h4>Our Mission</h4>
+                                    <p>To standardize coaching excellence through professional development.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="icon-box-small">
+                                    <i class="fas fa-eye color-crimson"></i>
+                                    <h4>Our Vision</h4>
+                                    <p>A world where every coach delivers transformative, ethical impact.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-image-grid">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" alt="Team Work" class="img-fluid rounded-4 shadow-lg main-img">
+                            <div class="stats-card-floating">
+                                <div class="stat-item">
+                                    <span class="number">10k+</span>
+                                    <span class="label">Members</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="number">50+</span>
+                                    <span class="label">Countries</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="padding-section bg-light why-choose-us">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="why-choose-content">
+                            <span class="section-tag">The AAC Advantage</span>
+                            <h2 class="section-title">Why Choose American Association for Coaches?</h2>
+                            <p class="section-desc">We represent the pinnacle of coaching standards. Here's why thousands of professionals choose us as their home for certification and growth.</p>
+                            
+                            <ul class="why-list mt-4">
+                                <li>
+                                    <div class="why-icon-mini"><i class="fas fa-certificate"></i></div>
+                                    <div class="why-text-mini">
+                                        <h5>Gold Standard Accreditation</h5>
+                                        <p>Our certifications are built on rigorous research and real-world outcomes.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="why-icon-mini"><i class="fas fa-globe"></i></div>
+                                    <div class="why-text-mini">
+                                        <h5>Global Mobility</h5>
+                                        <p>Your AAC designation is recognized by top organizations in over 50 countries.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="why-icon-mini"><i class="fas fa-book-open"></i></div>
+                                    <div class="why-text-mini">
+                                        <h5>Lifelong Learning</h5>
+                                        <p>Access continuous education credits and exclusive industry insights.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="why-icon-mini"><i class="fas fa-handshake"></i></div>
+                                    <div class="why-text-mini">
+                                        <h5>Ethical Community</h5>
+                                        <p>Join a network committed to the highest standards of professional conduct.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="why-image-stack">
+                            <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=80&w=800" alt="Professional Networking" class="img-fluid rounded-4 shadow-xl">
+                            <div class="why-floating-badge">
+                                <i class="fas fa-trophy"></i>
+                                <span>Top Rated <br> Association 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values -->
+        <section class="padding-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-tag">Core Values</span>
+                    <h2 class="section-title">The Principles We Stand For</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Integrity</h3>
+                            <p>We uphold the highest ethical standards in every coaching relationship and professional interaction.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fas fa-users"></i></div>
+                            <h3>Inclusivity</h3>
+                            <p>We foster a diverse global community where every voice is heard and every background is valued.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fas fa-chart-line"></i></div>
+                            <h3>Innovation</h3>
+                            <p>We continuously evolve our standards and methodologies to meet the needs of a changing world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Team -->
+        <section class="padding-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-tag">Leadership</span>
+                    <h2 class="section-title">Meet Our Board of Directors</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" alt="Sarah Thompson">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3>Dr. Sarah Thompson</h3>
+                                <p>President & Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400" alt="James Wilson">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3>James Wilson</h3>
+                                <p>VP, Global Standards</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400" alt="Lisa Chen">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3>Lisa Chen</h3>
+                                <p>Director of Membership</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-card">
+                            <div class="team-img">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" alt="Robert Taylor">
+                                <div class="team-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-info">
+                                <h3>Robert Taylor</h3>
+                                <p>Head of Ethics Board</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container text-center">
+                <h2 class="cta-title">Join the Global Standard</h2>
+                <p class="cta-desc text-white opacity-75">Take the next step in your professional journey and become a part of AAC.</p>
+                <a href="#" class="btn btn-secondary btn-lg px-5">Join AAC Today</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo mb-3">AAC LOGO</div>
+                    <p class="footer-text">Advancing the art, science, and practice of professional coaching globally through standard-setting and community building.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="affiliation.html">Affiliation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Membership</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Professional Trainer</a></li>
+                        <li><a href="#">Fellow Coach</a></li>
+                        <li><a href="#">Associate Membership</a></li>
+                        <li><a href="#">Affiliation Programs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Way, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> info@aac-coaches.org</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright">&copy; 2025 American Association for Coaches. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

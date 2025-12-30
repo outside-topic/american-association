@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Membership | American Association for Coaches</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Inter & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo-placeholder">AAC LOGO</div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown multilevel">
+                            <a class="nav-link dropdown-toggle active" href="#" id="membershipDropdown" data-bs-toggle="dropdown">Membership</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="membership-trainer.html">Trainer</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Professional</a></li>
+                                        <li><a class="dropdown-item" href="#">Fellow</a></li>
+                                        <li><a class="dropdown-item" href="#">Associate</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle active" href="membership-coach.html">Coach</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Professional</a></li>
+                                        <li><a class="dropdown-item" href="#">Fellow</a></li>
+                                        <li><a class="dropdown-item" href="#">Associate</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Affiliation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item ms-lg-3">
+                            <a href="#application-form" class="btn btn-secondary btn-sm px-4 rounded-pill">Apply Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero" style="background-image: linear-gradient(rgba(18, 29, 95, 0.8), rgba(18, 29, 95, 0.8)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1920');">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="display-3 fw-bold text-white mb-3">Coach Membership</h1>
+                    <p class="lead text-white opacity-75 mb-4">Empowering professional coaches to lead with ethics and global recognition.</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item active text-crimson">Membership / Coach</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Process Section -->
+        <section class="padding-section membership-process">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-tag">Smooth Enrollment</span>
+                    <h2 class="section-title">The Membership Journey</h2>
+                    <p class="section-desc">We've streamlined our application process to help you join our elite community of international coaches.</p>
+                </div>
+                
+                <div class="row g-4 process-steps position-relative">
+                    <div class="process-line"></div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-card">
+                            <div class="step-num">01</div>
+                            <div class="process-icon"><i class="fas fa-edit"></i></div>
+                            <h4>Submit Details</h4>
+                            <p>Complete your profile, sharing your passion for coaching and professional background.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-card">
+                            <div class="step-num">02</div>
+                            <div class="process-icon"><i class="fas fa-clipboard-check"></i></div>
+                            <h4>Review & Audit</h4>
+                            <p>Our audit team evaluates your coaching hours and training for alignment with AAC standards.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-card">
+                            <div class="step-num">03</div>
+                            <div class="process-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                            <h4>Ethics Pledge</h4>
+                            <p>All members sign our Global Code of Ethics to ensure transformative client outcomes.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-card">
+                            <div class="step-num">04</div>
+                            <div class="process-icon"><i class="fas fa-award"></i></div>
+                            <h4>Activation</h4>
+                            <p>Your membership goes live, giving you instant access to global perks and recognition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Tiers -->
+        <section class="padding-section bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="section-tag">Elite Designations</span>
+                    <h2 class="section-title">Coach Accreditation Tiers</h2>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Professional Coach Tier -->
+                    <div class="col-lg-4">
+                        <div class="coach-tier">
+                            <div class="tier-badge bg-primary">MOST RECOMMENDED</div>
+                            <h3>Professional Coach (PC)</h3>
+                            <p class="tier-summary">Ideally suited for practicing coaches with established client success records.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check"></i> 500+ Coaching Hours</li>
+                                <li><i class="fas fa-check"></i> Advanced Methodology</li>
+                                <li><i class="fas fa-check"></i> International Directory</li>
+                                <li><i class="fas fa-check"></i> Member Discounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Fellow Coach Tier -->
+                    <div class="col-lg-4">
+                        <div class="coach-tier featured">
+                            <h3>Fellow Coach (FC)</h3>
+                            <p class="tier-summary">A prestigious designation for transformative leaders in the coaching industry.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check"></i> 2500+ Coaching Hours</li>
+                                <li><i class="fas fa-check"></i> Industry Leadership</li>
+                                <li><i class="fas fa-check"></i> Specialized Mentorship</li>
+                                <li><i class="fas fa-check"></i> FC Global Accreditation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Associate Coach Tier -->
+                    <div class="col-lg-4">
+                        <div class="coach-tier">
+                            <h3>Associate Coach (AC)</h3>
+                            <p class="tier-summary">Designed for dedicated coaches starting their professional journey.</p>
+                            <ul class="tier-features">
+                                <li><i class="fas fa-check"></i> 100+ Coaching Hours</li>
+                                <li><i class="fas fa-check"></i> Foundational Competencies</li>
+                                <li><i class="fas fa-check"></i> Peer Support Access</li>
+                                <li><i class="fas fa-check"></i> AAC Membership Portal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form Section -->
+        <section id="application-form" class="padding-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="form-container-premium">
+                            <div class="text-center mb-5">
+                                <span class="section-tag">Enroll Today</span>
+                                <h2 class="section-title">Membership Application</h2>
+                                <p class="section-desc">Join our global collective of coaches and elevate your professional credibility.</p>
+                            </div>
+                            
+                            <form action="#" class="premium-form">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group-aac">
+                                            <label>Full Name</label>
+                                            <input type="text" class="form-control" placeholder="Jane Smith" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group-aac">
+                                            <label>Email Address</label>
+                                            <input type="email" class="form-control" placeholder="jane.smith@example.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group-aac">
+                                            <label>LinkedIn Profile (URL)</label>
+                                            <input type="url" class="form-control" placeholder="https://linkedin.com/in/..." required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group-aac">
+                                            <label>Coaching Niche</label>
+                                            <select class="form-select" required>
+                                                <option value="" selected disabled>Select Niche</option>
+                                                <option>Leadership Coaching</option>
+                                                <option>Life Coaching</option>
+                                                <option>Executive Coaching</option>
+                                                <option>Business Coaching</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group-aac">
+                                            <label>Target Membership Tier</label>
+                                            <select class="form-select" required>
+                                                <option value="" selected disabled>Select Tier</option>
+                                                <option>Associate Coach (AC)</option>
+                                                <option>Professional Coach (PC)</option>
+                                                <option>Fellow Coach (FC)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group-aac">
+                                            <label>Estimated Coaching Hours</label>
+                                            <input type="number" class="form-control" placeholder="e.g. 1000" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center mt-5">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">Submit Registration</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo mb-3">AAC LOGO</div>
+                    <p class="footer-text">Empowering coaches and trainers to achieve excellence through global standards.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-title">Membership</h5>
+                    <ul class="footer-links">
+                        <li><a href="membership-trainer.html">Professional Trainer</a></li>
+                        <li><a href="membership-coach.html">Fellow Coach</a></li>
+                        <li><a href="#">Associate Membership</a></li>
+                        <li><a href="#">Affiliation Programs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Way, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> coaching@aac-coaches.org</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="copyright text-center">&copy; 2025 American Association for Coaches. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
