@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // footer year
+    const date = new Date();
+    if(document.querySelector('.footer_year')){
+        document.querySelector('.footer_year').textContent = date.getFullYear();
+    }
     
     // Navbar Hover for Desktop
     if (window.innerWidth >= 992) {
