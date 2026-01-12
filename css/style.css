@@ -17,7 +17,11 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, .navbar-brand {
+.border-color-primary{
+    border-color: var(--primary-color) !important;
+}
+
+h1, h2, h3, h4, .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
@@ -692,6 +696,11 @@ header.fixed-top{
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     display: flex;
     gap: 30px;
+}
+
+.society-purpose-box h3{
+    color: var(--primary-color);
+    font-family: var(--paragraph-font-family);
 }
 
 .stat-item {
@@ -1406,4 +1415,143 @@ header.fixed-top{
 
 .partner-card:hover .partner-icon i {
     color: var(--white) !important;
+}
+
+/* --- Mission & Vision Section (About) --- */
+.bg-primary-light {
+    background-color: rgba(18, 29, 95, 0.08);
+}
+
+.vision_card {
+    border-color: var(--primary-color) !important;
+}
+
+.vision_card .icon-box-large {
+    color: var(--primary-color);
+}
+
+.bg-crimson-light {
+    background-color: rgba(199, 0, 57, 0.08);
+}
+
+.icon-box-large {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.border-crimson {
+    border-color: var(--secondary-color) !important;
+}
+
+/* --- Core Values Section (ASTC) --- */
+.value-card-astc {
+    transition: var(--transition);
+}
+
+.value-card-astc:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 10px 25px rgba(18, 29, 95, 0.08) !important;
+}
+
+.value-check i {
+    font-size: 1.4rem;
+}
+
+.value-card-astc h4 {
+    font-family: var(--paragraph-font-family);
+    font-weight: 600;
+}
+
+/* --- Strategic Objectives Section --- */
+.objective-intro {
+    background-color: var(--primary-color) !important;
+}
+
+.obj-dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.objective-list-box li {
+    transition: var(--transition);
+}
+
+.objective-list-box li:hover {
+    background-color: #f8faff;
+    padding-left: 25px !important;
+}
+
+/* --- Governance & Leadership Section --- */
+.governance-policy-card p {
+    line-height: 1.8;
+    color: #333;
+}
+
+.gov-icon-mini {
+    width: 45px;
+    height: 45px;
+    background: rgba(18, 29, 95, 0.05);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.gov-floating-card {
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.gov-feature {
+    transition: var(--transition);
+}
+
+.gov-feature:hover {
+    transform: translateX(5px);
+}
+
+/* --- Code of Conduct Section --- */
+.conduct-principles-grid {
+    border-color: rgba(0,0,0,0.05) !important;
+}
+
+.principle-item {
+    padding: 20px;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.principle-item:hover {
+    background: #fdfdfd;
+}
+
+.principle-item i {
+    font-size: 2rem;
+}
+
+.principle-item h4 {
+    font-family: var(--paragraph-font-family);
+    margin-bottom: 0.5rem;
+}
+
+/* --- Strategic Alliances Section --- */
+.alliance-card {
+    transition: var(--transition);
+}
+
+.alliance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.alliance-card h4 {
+    font-family: var(--paragraph-font-family);
 }
