@@ -6,6 +6,9 @@
     --light-bg: #f8f9fa;
     --white: #ffffff;
     --transition: all 0.3s ease;
+    --heading-font-family: 'Playfair Display', serif;
+    --heading-font-weight: 700;
+    --paragraph-font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -1328,3 +1331,79 @@ header.fixed-top{
 .color-primary { color: var(--primary-color); }
 .color-crimson { color: var(--secondary-color); }
 
+/* --- Who We Are Section --- */
+.bg-light-alt {
+    background-color: #f8faff;
+}
+
+.border-accent {
+    border-color: var(--accent-color) !important;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+.custom-list li {
+    font-size: 1.05rem;
+    color: #444;
+}
+
+.member-list li {
+    padding: 8px 15px;
+    background: #fdf2f5;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--accent-color);
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid rgba(230, 0, 66, 0.1);
+}
+
+.custom-list i {
+    font-size: 1.1rem;
+}
+
+.font-size-md {
+    font-size: 1.1rem;
+}
+/* --- Strategic Partners Section --- */
+.partner-card {
+    transition: var(--transition);
+    background: var(--white);
+    border: 1px solid rgba(18, 29, 95, 0.05) !important;
+}
+
+.partner-card h4{
+    font-family: var(--paragraph-font-family);
+}
+
+.partner-card .partner-icon{
+    color: var(--secondary-color);
+}
+
+.partner-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(18, 29, 95, 0.1) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.partner-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(18, 29, 95, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+.partner-card:hover .partner-icon {
+    background: var(--primary-color);
+}
+
+.partner-card:hover .partner-icon i {
+    color: var(--white) !important;
+}
