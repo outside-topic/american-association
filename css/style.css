@@ -2036,3 +2036,84 @@ header.fixed-top{
 .benefit-list li i {
     font-size: 0.8rem;
 }
+
+/* --- Ethical Standard - Glassmorphism --- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.glass-card h5, .glass-card p {
+    color: #fff;
+}
+
+.glass-card .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* --- Governance & Accountability Section --- */
+.policy-pill {
+    transition: all 0.3s ease;
+}
+
+.policy-pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Timeline */
+.timeline-step {
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-step .step-number {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background: #fff;
+    border: 3px solid var(--bs-light);
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.timeline-step:hover .step-number {
+    transform: scale(1.1);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Connector Line (Desktop Only) */
+@media (min-width: 992px) {
+    .timeline-wrapper {
+        position: relative;
+    }
+    
+    .timeline-connector {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #e9ecef;
+        z-index: 0;
+    }
+}
