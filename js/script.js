@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Swiper Initialization
-    const heroSwiper = document.querySelector('.heroSwiper') && new Swiper('.heroSwiper', {
+    const heroSwiper = new Swiper('.heroSwiper', {
         loop: true,
         autoplay: {
             delay: 5000,
@@ -74,8 +74,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // About Preview Section Animations
+    gsap.from('.about-preview-image', {
+        scrollTrigger: {
+            trigger: '.about-preview-image',
+            start: 'top 85%',
+        },
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    gsap.from('.about-preview-image + .col-lg-6', {
+        scrollTrigger: {
+            trigger: '.about-preview-image',
+            start: 'top 85%',
+        },
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        delay: 0.2,
+        ease: "power3.out"
+    });
+
     // Testimonial Swiper
-    const testimonialSwiper = document.querySelector('.testimonialSwiper') && new Swiper('.testimonialSwiper', {
+    const testimonialSwiper = new Swiper('.testimonialSwiper', {
         loop: true,
         autoplay: {
             delay: 4000,
@@ -109,50 +133,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Scroll Animations
+    gsap.from('.about-preview .section-tag, .about-preview .section-title, .about-preview .section-desc, .about-preview .check-list li, .about-preview .btn', {
+        scrollTrigger: {
+            trigger: '.about-preview',
+            start: 'top 80%',
+        },
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
 
-    if(document.querySelector('.about-preview')){
+    gsap.from('.about-preview .image-stack', {
+        scrollTrigger: {
+            trigger: '.about-preview',
+            start: 'top 80%',
+        },
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        ease: "power3.out"
+    });
 
-        gsap.from('.about-preview .section-tag, .about-preview .section-title, .about-preview .section-desc, .about-preview .check-list li, .about-preview .btn', {
-            scrollTrigger: {
-                trigger: '.about-preview',
-                start: 'top 80%',
-            },
-            opacity: 0,
-            y: 30,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: "power3.out"
-        });
-    
-        gsap.from('.about-preview .image-stack', {
-            scrollTrigger: {
-                trigger: '.about-preview',
-                start: 'top 80%',
-            },
-            opacity: 0,
-            x: 50,
-            duration: 1,
-            ease: "power3.out"
-        });
-    
-    
-    
-        gsap.from('.cta-section .container *', {
-            scrollTrigger: {
-                trigger: '.cta-section',
-                start: 'top 85%',
-            },
-            opacity: 0,
-            y: 30,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: "power3.out"
-        });
-    }
 
+
+    gsap.from('.cta-section .container *', {
+        scrollTrigger: {
+            trigger: '.cta-section',
+            start: 'top 85%',
+        },
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
 
     // About Page Animations
-    document.querySelector('.page-hero') && gsap.from('.page-hero .hero-content *', {
+    gsap.from('.page-hero .hero-content *', {
         opacity: 0,
         y: 40,
         duration: 1,
@@ -160,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power3.out"
     });
 
-    document.querySelector('.icon-box-small') && gsap.from('.icon-box-small', {
+    gsap.from('.icon-box-small', {
         scrollTrigger: {
             trigger: '.icon-box-small',
             start: 'top 85%',
@@ -172,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power3.out"
     });
 
-    document.querySelector('.value-card') && gsap.from('.value-card', {
+    gsap.from('.value-card', {
         scrollTrigger: {
             trigger: '.value-card',
             start: 'top 85%',
@@ -184,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power3.out"
     });
 
-    document.querySelector('.team-card') && gsap.from('.team-card', {
+    gsap.from('.team-card', {
         scrollTrigger: {
             trigger: '.team-card',
             start: 'top 85%',
@@ -197,62 +216,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Why Choose Us Animations
-    if(document.querySelector(".why-choose-us")){
+    gsap.from('.why-choose-us .why-image-stack', {
+        scrollTrigger: {
+            trigger: '.why-choose-us',
+            start: 'top 80%',
+        },
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: "power3.out"
+    });
 
-        gsap.from('.why-choose-us .why-image-stack', {
-            scrollTrigger: {
-                trigger: '.why-choose-us',
-                start: 'top 80%',
-            },
-            opacity: 0,
-            x: -50,
-            duration: 1,
-            ease: "power3.out"
-        });
-    
-        gsap.from('.why-choose-us .why-list li', {
-            scrollTrigger: {
-                trigger: '.why-choose-us',
-                start: 'top 80%',
-            },
-            opacity: 0,
-            x: 50,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: "power3.out"
-        });
-    }
+    gsap.from('.why-choose-us .why-list li', {
+        scrollTrigger: {
+            trigger: '.why-choose-us',
+            start: 'top 80%',
+        },
+        opacity: 0,
+        x: 50,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
 
     // New Sections Animations
-    if(document.querySelector('.leadership-section')){
-        
-        gsap.from('.leadership-section .leadership-image-wrapper', {
-            scrollTrigger: {
-                trigger: '.leadership-section',
-                start: 'top 80%',
-            },
-            opacity: 0,
-            x: -50,
-            duration: 1,
-            ease: "power3.out"
-        });
-    
-        gsap.from('.leadership-section .col-lg-6:last-child *', {
-            scrollTrigger: {
-                trigger: '.leadership-section',
-                start: 'top 80%',
-            },
-            opacity: 0,
-            x: 50,
-            duration: 1,
-            stagger: 0.2,
-            ease: "power3.out"
-        });
+    gsap.from('.leadership-section .leadership-image-wrapper', {
+        scrollTrigger: {
+            trigger: '.leadership-section',
+            start: 'top 80%',
+        },
+        opacity: 0,
+        x: -50,
+        duration: 1,
+        ease: "power3.out"
+    });
 
-    }
+    gsap.from('.leadership-section .col-lg-6:last-child *', {
+        scrollTrigger: {
+            trigger: '.leadership-section',
+            start: 'top 80%',
+        },
+        opacity: 0,
+        x: 50,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out"
+    });
 
     // Membership Page Animations
-    document.querySelector('.process-card') && gsap.from('.process-card', {
+    gsap.from('.process-card', {
         scrollTrigger: {
             trigger: '.process-steps',
             start: 'top 85%',
@@ -264,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power3.out"
     });
 
-    document.querySelector('.form-container-premium') && gsap.from('.form-container-premium', {
+    gsap.from('.form-container-premium', {
         scrollTrigger: {
             trigger: '.form-container-premium',
             start: 'top 85%',
@@ -276,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Testimonials and FAQ Animations
-    document.querySelector('.testimonials-section') && gsap.from('.testimonials-section .container *', {
+    gsap.from('.testimonials-section .container *', {
         scrollTrigger: {
             trigger: '.testimonials-section',
             start: 'top 85%',
@@ -289,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Affiliation and Contact Page Animations
-    document.querySelector('.benefit-item-small') && gsap.from('.benefit-item-small', {
+    gsap.from('.benefit-item-small', {
         scrollTrigger: {
             trigger: '.benefit-item-small',
             start: 'top 85%',
@@ -301,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power2.out"
     });
 
-    document.querySelector('.category-card-premium') && gsap.from('.category-card-premium', {
+    gsap.from('.category-card-premium', {
         scrollTrigger: {
             trigger: '.category-card-premium',
             start: 'top 85%',
@@ -313,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "power3.out"
     });
 
-    document.querySelector('.contact-info-card-premium') && gsap.from('.contact-info-card-premium', {
+    gsap.from('.contact-info-card-premium', {
         scrollTrigger: {
             trigger: '.contact-info-card-premium',
             start: 'top 85%',
@@ -325,7 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "back.out(1.7)"
     });
 
-    document.querySelector('.contact-sidebar') && gsap.from('.contact-sidebar', {
+    gsap.from('.contact-sidebar', {
         scrollTrigger: {
             trigger: '.contact-sidebar',
             start: 'top 85%',
