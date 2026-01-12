@@ -21,9 +21,29 @@ body {
     border-color: var(--primary-color) !important;
 }
 
+.bg-color-primary{
+    background-color: var(--primary-color);
+}
+
+.bg-color-secondary{
+    background-color: var(--secondary-color);
+}
+
 h1, h2, h3, h4, .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
+}
+
+.h6 , .h5{
+    font-family: var(--paragraph-font-family);
+}
+
+.text-color-primary{
+    color: var(--primary-color);
+}
+
+.text-color-secondary{
+    color: var(--secondary-color);
 }
 
 /* --- Navbar Styles --- */
@@ -468,6 +488,96 @@ header.fixed-top{
     transform: translateX(5px);
 }
 
+/* --- Membership Categories (Progression Track) --- */
+.categories-track {
+    padding: 20px 0;
+}
+
+.track-line {
+    position: absolute;
+    top: 60px;
+    left: 10%;
+    right: 10%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--primary-color) 100%);
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.category-node {
+    position: relative;
+    z-index: 1;
+}
+
+.node-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.category-node:hover .node-circle {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.category-node h3 {
+    color: var(--primary-color);
+}
+
+/* --- Membership Eligibility Section --- */
+.eligibility-icon-mini {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+}
+
+.eligibility-item {
+    transition: var(--transition);
+}
+
+/* --- Application Process Section --- */
+.process-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.process-step:hover .step-number {
+    transform: scale(1.15) rotate(8deg);
+}
+
+.step-content {
+    flex: 1;
+}
+
+@media (max-width: 991.98px) {
+    .process-step {
+        flex-direction: row !important;
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .step-content {
+        text-align: left !important;
+        padding-left: 20px !important;
+        padding-right: 0 !important;
+    }
+}
 /* Featured Tier Card (Dark Mode Theme) */
 .tier-card.featured {
     background: var(--primary-color);
@@ -1554,4 +1664,267 @@ header.fixed-top{
 
 .alliance-card h4 {
     font-family: var(--paragraph-font-family);
+}
+
+/* --- Membership Overview Section --- */
+.overview-box {
+    transition: var(--transition);
+}
+
+.overview-item {
+    border: 1px solid rgba(0,0,0,0.02);
+    transition: var(--transition);
+}
+
+.overview-item:hover {
+    background-color: #f8faff !important;
+    transform: translateY(-3px);
+}
+
+.icon-box-sm {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(18, 29, 95, 0.05);
+    border-radius: 12px;
+}
+
+/* --- What is Membership Section --- */
+.significance-list {
+    border-top: 4px solid var(--secondary-color) !important;
+}
+
+.career-stages-box {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stage-tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* --- Why Join ASTC Section --- */
+.reason-card {
+    transition: var(--transition);
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.reason-card h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* --- Digital Membership Certificate Section --- */
+.certificate-mockup-container {
+    perspective: 1000px;
+}
+
+.certificate-mockup {
+    background: #fff;
+    padding: 2px;
+    background: linear-gradient(135deg, #d4af37 0%, #f9f1c0 50%, #d4af37 100%); /* Gold border effect */
+    aspect-ratio: 1.414 / 1; /* A4 aspect ratio */
+    max-width: 100%;
+}
+
+.cert-border {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 2px solid rgba(18, 29, 95, 0.1);
+    pointer-events: none;
+}
+
+.cert-content {
+    background: #fff;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cert-logo {
+    font-family: var(--heading-font-family);
+    font-weight: 800;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.cert-title {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    color: var(--text-dark);
+}
+
+.cert-subtitle {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.cert-member-name {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.cert-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.cert-qr-placeholder {
+    width: 60px;
+    height: 60px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.cert-seal {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background: rgba(18, 29, 95, 0.03);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgba(18, 29, 95, 0.05);
+    z-index: 0;
+}
+
+.certificate-features li i {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 575.98px) {
+    .cert-content {
+        padding: 2rem !important;
+    }
+}
+/* --- Member Verification Section --- */
+.verification-banner {
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.verification-tag {
+    transition: var(--transition);
+}
+
+.verification-tag:hover {
+    background: #fff !important;
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-3px);
+}
+
+/* --- Renewal & Upgrade Section --- */
+.action-card {
+    transition: var(--transition);
+}
+
+.action-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+/* --- Renewal & Upgrade Minimalist Design --- */
+.card-minimal {
+    border: 1px solid rgba(0,0,0,0.06);
+    transition: all 0.5s ease;
+}
+
+.card-minimal.border-gold {
+    border-top: 3px solid var(--secondary-color);
+}
+
+.card-minimal.border-crimson {
+    border-top: 3px solid var(--crimson);
+}
+
+.card-minimal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.minimal-icon-box {
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+}
+
+.card-minimal:hover .minimal-icon-box {
+    transform: scale(1.1);
+}
+
+.separator-line {
+    width: 60px;
+    height: 3px;
+    opacity: 0.8;
+}
+
+.btn-outline-crimson {
+    color: var(--crimson);
+    border-color: var(--crimson);
+}
+
+.btn-outline-crimson:hover {
+    background-color: var(--crimson);
+    color: white;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- Membership Benefits Section --- */
+.benefit-card {
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.benefit-icon-box {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-list li {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.benefit-list li i {
+    font-size: 0.8rem;
 }
