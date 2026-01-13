@@ -46,42 +46,109 @@ h1, h2, h3, h4, .navbar-brand {
     color: var(--secondary-color);
 }
 
-/* --- Navbar Styles --- */
-.navbar {
-    /* padding: 20px 0; */
+/* --- Top Bar Styles --- */
+.top-bar {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 10px 0;
+    font-size: 0.875rem;
+}
+
+.top-bar-left {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.top-bar-item {
+    color: rgba(255,255,255,0.9);
+    display: inline-flex;
+    align-items: center;
+}
+
+.top-bar-item i {
+    color: var(--secondary-color);
+}
+
+.top-bar-right {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-bar-menu-link {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
     transition: var(--transition);
-    background: transparent;
+    position: relative;
+    padding: 5px 0;
 }
 
-header{
-    background: rgba(255,255,255, 1);
-    backdrop-filter: blur(10px);
+.top-bar-menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: var(--transition);
 }
 
-.logo{
+.top-bar-menu-link:hover {
+    color: var(--white);
+}
+
+.top-bar-menu-link:hover::after {
+    width: 100%;
+}
+
+.top-bar-link {
+    color: rgba(255,255,255,0.8);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    transition: var(--transition);
+}
+
+.top-bar-link:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* --- Main Navbar Styles --- */
+header {
+    background: var(--white);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.main-navbar {
+    padding: 15px 0;
+    background: var(--white);
+}
+
+.navbar-toggler{
+    background-color: var(--white);
+}
+
+.logo {
     height: auto;
-    width: 60px
+    width: 60px;
 }
 
-.logo img{
+.logo img {
     height: auto;
     width: 100%;
     object-fit: cover;
     transform: scale(1.5);
-}
-
-header.fixed-top{
-    top: 20px !important;
-    width: 95%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.navbar.scrolled {
-    padding: 10px 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 2px solid var(--primary-color);
 }
 
 .navbar-brand .logo-placeholder {
@@ -93,33 +160,35 @@ header.fixed-top{
 
 .nav-link {
     color: var(--primary-color);
-    font-weight: 500;
-    margin: 0 10px;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 8px 15px !important;
     transition: var(--transition);
     position: relative;
+    font-size: 0.95rem;
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    left: 10px;
+    bottom: 0;
+    left: 15px;
     width: 0;
     height: 2px;
     background: var(--secondary-color);
     transition: var(--transition);
 }
 
-.nav-link.active{
+.nav-link.active {
     color: var(--accent-color) !important;
 }
 
-.nav-link:focus{
-    color: var(--white) !important;
+.nav-link:focus {
+    color: var(--primary-color) !important;
 }
 
 .nav-link:hover::after, .nav-link.active::after {
-    width: calc(100% - 20px);
+    width: calc(100% - 30px);
 }
 
 .nav-link:hover {
@@ -130,22 +199,43 @@ header.fixed-top{
 .dropdown-menu {
     border: none;
     border-top: 3px solid var(--secondary-color);
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     background: var(--primary-color);
-    padding: 10px 0;
+    padding: 15px 0;
+    min-width: 280px;
 }
 
 .dropdown-item {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.85);
     font-weight: 500;
-    padding: 10px 25px;
+    padding: 12px 25px;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.dropdown-item i {
+    width: 20px;
+    color: var(--secondary-color);
     transition: var(--transition);
 }
 
 .dropdown-item:hover {
-    background: rgba(191, 163, 124, 0.1);
-    color: var(--secondary-color);
+    background: rgba(230, 0, 66, 0.1);
+    color: var(--white);
+    padding-left: 30px;
+}
+
+.dropdown-item:hover i {
+    color: var(--white);
+    transform: translateX(3px);
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 10px 0;
 }
 
 .dropdown-submenu {
@@ -188,9 +278,45 @@ header.fixed-top{
 }
 
 @media (max-width: 991.98px) {
-    .navbar {
+    .top-bar-left {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .top-bar-right {
+        justify-content: flex-start;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .top-bar-menu-link {
+        font-size: 0.8rem;
+    }
+    
+    .top-bar {
+        padding: 15px 0;
+    }
+    
+    .main-navbar {
         background: var(--primary-color) !important;
     }
+    
+    .nav-link {
+        color: rgba(255,255,255,0.9) !important;
+    }
+    
+    .nav-link:hover {
+        color: var(--secondary-color) !important;
+    }
+    
+    .dropdown-menu {
+        background: rgba(18, 29, 95, 0.95);
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+    
     .dropdown-submenu > .dropdown-menu {
         left: 0;
         margin-left: 20px;
@@ -224,7 +350,7 @@ header.fixed-top{
     color: var(--white);
     margin-bottom: 20px;
     line-height: 1.1;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(30px);
 }
 
@@ -233,12 +359,12 @@ header.fixed-top{
     color: rgba(255,255,255,0.9);
     margin-bottom: 40px;
     /* max-width: 600px; */
-    opacity: 0;
+    opacity: 1;
     transform: translateY(30px);
 }
 
 .hero-buttons {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(30px);
 }
 
@@ -1161,15 +1287,18 @@ header.fixed-top{
 
 /* --- Footer --- */
 .footer {
-    background-color: var(--primary-color);
     color: var(--white);
     padding: 80px 0 30px;
 }
 
 .footer-logo {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--white);
+    
+}
+
+.footer-logo img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
 }
 
 .footer-text {

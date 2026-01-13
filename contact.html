@@ -16,12 +16,35 @@
 <body>
 
     <!-- Header / Navbar -->
-    <header id="header" class="fixed-top">
-        <nav class="navbar navbar-expand-lg">
+    <header id="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="top-bar-left">
+                            <span class="top-bar-item"><i class="fas fa-envelope me-2"></i>info@astc-coaches.org</span>
+                            <span class="top-bar-item"><i class="fas fa-phone me-2"></i>+1 (234) 567-890</span>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="top-bar-right">
+                            <a href="about.html" class="top-bar-menu-link">About</a>
+                            <a href="resources.html" class="top-bar-menu-link">Resources</a>
+                            <a href="contact.html" class="top-bar-menu-link">Contact</a>
+                            <a href="partnership_accr.html" class="top-bar-menu-link">Partnership & Accreditation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
                     <div class="logo">
-                        <img src="./images/logo.png" alt="">
+                        <img src="./images/logo.png" alt="ASTC Logo">
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -29,47 +52,58 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item dropdown multilevel">
+                        
+                        
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="membershipDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Membership
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="membershipDropdown">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="membership-trainer.html">Trainer</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Professional</a></li>
-                                        <li><a class="dropdown-item" href="#">Fellow</a></li>
-                                        <li><a class="dropdown-item" href="#">Associate</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle" href="membership-coach.html">Coach</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Professional</a></li>
-                                        <li><a class="dropdown-item" href="#">Fellow</a></li>
-                                        <li><a class="dropdown-item" href="#">Associate</a></li>
-                                    </ul>
-                                </li>
+                                <li><a class="dropdown-item" href="membership.html"><i class="fas fa-info-circle me-2"></i>What is Membership</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="membership.html#associate"><i class="fas fa-user-graduate me-2"></i>Associate Member</a></li>
+                                <li><a class="dropdown-item" href="membership.html#professional"><i class="fas fa-user-tie me-2"></i>Professional Member</a></li>
+                                <li><a class="dropdown-item" href="membership.html#fellow"><i class="fas fa-crown me-2"></i>Fellow Member</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="renewal_upgrade.html"><i class="fas fa-sync-alt me-2"></i>Renewal & Upgrade</a></li>
+                                <li><a class="dropdown-item" href="member_verification.html"><i class="fas fa-id-card me-2"></i>Member Verification</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="affiliation.html">Affiliation</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="competencyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Competency Framework
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="competencyDropdown">
+                                <li><a class="dropdown-item" href="competency_framework.html"><i class="fas fa-info-circle me-2"></i>What is Competency Framework</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="trainer_comp_standard.html"><i class="fas fa-chalkboard-teacher me-2"></i>Trainer Competency Standard</a></li>
+                                <li><a class="dropdown-item" href="coach_comp_standard.html"><i class="fas fa-user-friends me-2"></i>Coach Competency Standard</a></li>
+                            </ul>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="ethical_standard.html">Ethics & Professional Standard</a>
+                        </li>                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="verificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Verification & Registry
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="verificationDropdown">
+                                <li><a class="dropdown-item" href="member_verification.html"><i class="fas fa-user-check me-2"></i>Member Verification</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#registry"><i class="fas fa-list-alt me-2"></i>Certified Professional Registry</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#validation"><i class="fas fa-certificate me-2"></i>Credential Validation</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#badge"><i class="fas fa-badge-check me-2"></i>Digital Badge Verification</a></li>
+                            </ul>
                         </li>
+
+                        
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <!-- Page Hero -->
         <section class="page-hero" style="background-image: linear-gradient(rgba(18, 29, 95, 0.85), rgba(18, 29, 95, 0.85)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=1920');">
@@ -90,29 +124,22 @@
         <!-- Contact Detail Info -->
         <section class="padding-section">
             <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-4">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5 col-md-6">
                         <div class="contact-info-card-premium">
                             <div class="icon-circle"><i class="fas fa-user-plus"></i></div>
                             <h3>Membership Support</h3>
                             <p>Questions about registration, certification tiers, or renewals.</p>
-                            <a href="mailto:membership@aac-coaches.org" class="btn-link">membership@aac-coaches.org</a>
+                            <a href="mailto:membership@ASTC-coaches.org" class="btn-link">membership@ASTC-coaches.org</a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="contact-info-card-premium featured">
-                            <div class="icon-circle"><i class="fas fa-handshake"></i></div>
-                            <h3>Partnership & Affiliation</h3>
-                            <p>Institutional collaborations, corporate training, and academic partnerships.</p>
-                            <a href="mailto:partners@aac-coaches.org" class="btn-link">partners@aac-coaches.org</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
+                    
+                    <div class="col-lg-5 col-md-6">
                         <div class="contact-info-card-premium">
                             <div class="icon-circle"><i class="fas fa-headset"></i></div>
                             <h3>Technical Helpdesk</h3>
                             <p>Assistance with digital badges, member portal access, or website issues.</p>
-                            <a href="mailto:support@aac-coaches.org" class="btn-link">support@aac-coaches.org</a>
+                            <a href="mailto:support@ASTC-coaches.org" class="btn-link">support@ASTC-coaches.org</a>
                         </div>
                     </div>
                 </div>
@@ -122,8 +149,8 @@
         <!-- Contact Form & Map Section -->
         <section class="padding-section bg-light">
             <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-7">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-md-10">
                         <div class="form-container-premium">
                             <span class="section-tag">Send a Message</span>
                             <h2 class="section-title">Global Inquiry Hub</h2>
@@ -169,45 +196,21 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-5">
-                        <div class="contact-sidebar">
-                            <div class="map-placeholder-aac mb-5">
-                                <div class="map-overlay">
-                                    <i class="fas fa-map-marked-alt"></i>
-                                    <p>Global Headquarters Visualization Coming Soon</p>
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="Map Placeholder" class="img-fluid rounded-4 shadow">
-                            </div>
-
-                            <div class="office-location-aac">
-                                <h4 class="mb-4 color-primary">Office Locations</h4>
-                                <div class="location-item mb-4">
-                                    <h5><i class="fas fa-map-marker-alt color-crimson me-2"></i> North America</h5>
-                                    <p>123 Business Way, Suite 400, New York, NY 10001, USA</p>
-                                </div>
-                                <div class="location-item mb-4">
-                                    <h5><i class="fas fa-map-marker-alt color-crimson me-2"></i> Europe</h5>
-                                    <p>45 Canary Wharf, Level 20, London E14 5AB, UK</p>
-                                </div>
-                                <div class="location-item">
-                                    <h5><i class="fas fa-map-marker-alt color-crimson me-2"></i> Asia Pacific</h5>
-                                    <p>88 Marina Boulevard, Level 15, Singapore 018989</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer bg-black">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="footer-logo mb-3">AAC LOGO</div>
-                    <p class="footer-text">Empowering the world's finest coaches and trainers through elite standard-setting and global community.</p>
+                    <div class="footer-logo mb-3">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <p class="footer-text">Advancing the art, science, and practice of professional coaching globally through standard-setting and community building.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -215,20 +218,44 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <!-- Standard Navigation Links -->
-                <!-- Simplified for focus -->
-                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 ms-lg-auto">
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
                     <h5 class="footer-title">Quick Links</h5>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="affiliation.html">Affiliation</a></li>
+                        <li><a href="affiliation.html">Resources</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="footer-title">ASTC</h5>
+                    <ul class="footer-links">
+                        <li><a href="./competency_framework.html">Competency Framework</a></li>
+                        <li><a href="./membership.html">Membership</a></li>
+                        <li><a href="./partner_accreditation.html">Partner & Accreditation</a></li>
+                        <li><a href="./membership_renewal_upgrade.html">Membership Renewal & Upgrade</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> info@ASTC-coaches.org</li>
                     </ul>
                 </div>
             </div>
             <hr class="footer-divider">
-            <p class="copyright text-center">&copy; <span class="footer_year"></span> American Association for Coaches. All rights reserved.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="copyright">&copy; <span class="footer_year"></span> American Association for Coaches. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="footer-bottom-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
 

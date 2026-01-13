@@ -395,56 +395,95 @@
             </div>
         </section>
 
-        <!-- Quality Assurance Section -->
-        <section class="padding-section bg-light">
+        <!-- Header / Navbar -->
+    <header id="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-5 mb-5 mb-lg-0">
-                        <div class="position-relative">
-                            <img src="images/quality_assr.jpg" alt="Quality Assurance" class="img-fluid rounded-4 shadow-lg position-relative z-1">
-                            <div class="experience-badge bg-color-primary" style="bottom: 20px; right: 20px;">
-                                <span class="number text-white"><i class="fas fa-shield"></i></span>
-                                <span class="text text-white">QA Framework</span>
-                            </div>
+                    <div class="col-md-5">
+                        <div class="top-bar-left">
+                            <span class="top-bar-item"><i class="fas fa-envelope me-2"></i>info@astc-coaches.org</span>
+                            <span class="top-bar-item"><i class="fas fa-phone me-2"></i>+1 (234) 567-890</span>
                         </div>
                     </div>
-                    <div class="col-lg-7 ps-lg-5">
-                        <span class="section-tag">Excellence Framework</span>
-                        <h2 class="section-title mb-4">Quality Assurance</h2>
-                        <p class="section-desc mb-4">
-                            ASTC maintains a robust quality assurance framework to protect brand integrity and stakeholder trust.
-                        </p>
-                        
-                        <h5 class="text-color-primary mb-3" style="font-size: 1.1rem; font-weight: 600;">QA Mechanisms Include:</h5>
-                        <div class="row g-3 mb-4">
-                            <div class="col-md-6">
-                                <ul class="check-list mt-0 mb-0">
-                                    <li><i class="fas fa-check-double text-color-secondary"></i> Standardized evaluation criteria</li>
-                                    <li><i class="fas fa-check-double text-color-secondary"></i> Independent assessors</li>
-                                    <li><i class="fas fa-check-double text-color-secondary"></i> Periodic audits</li>
-                                    <li><i class="fas fa-check-double text-color-secondary"></i> Performance indicators</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="check-list mt-0 mb-0">
-                                    <li><i class="fas fa-check-double text-color-secondary"></i> Learner feedback systems</li>
-                                    <li><i class="fas fa-check-double text-color-secondary"></i> Continuous improvement reviews</li>
-                                    <li><i class="fas fa-check-double text-color-secondary"></i> Risk management protocols</li>
-                                    <li><i class="fas fa-check-double text-color-secondary"></i> Digital monitoring systems</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="p-4 rounded-3" style="background: rgba(18, 29, 95, 0.05); border-left: 4px solid var(--secondary-color);">
-                            <p class="mb-0 fw-semibold text-color-primary">
-                                <i class="fas fa-shield-alt me-2 text-color-secondary"></i> 
-                                Quality assurance protects brand integrity and stakeholder trust.
-                            </p>
+                    <div class="col-md-7">
+                        <div class="top-bar-right">
+                            <a href="about.html" class="top-bar-menu-link">About</a>
+                            <a href="resources.html" class="top-bar-menu-link">Resources</a>
+                            <a href="contact.html" class="top-bar-menu-link">Contact</a>
+                            <a href="partnership_accr.html" class="top-bar-menu-link">Partnership & Accreditation</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="ASTC Logo">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="membershipDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Membership
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="membershipDropdown">
+                                <li><a class="dropdown-item" href="membership.html"><i class="fas fa-info-circle me-2"></i>What is Membership</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="membership.html#associate"><i class="fas fa-user-graduate me-2"></i>Associate Member</a></li>
+                                <li><a class="dropdown-item" href="membership.html#professional"><i class="fas fa-user-tie me-2"></i>Professional Member</a></li>
+                                <li><a class="dropdown-item" href="membership.html#fellow"><i class="fas fa-crown me-2"></i>Fellow Member</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="renewal_upgrade.html"><i class="fas fa-sync-alt me-2"></i>Renewal & Upgrade</a></li>
+                                <li><a class="dropdown-item" href="member_verification.html"><i class="fas fa-id-card me-2"></i>Member Verification</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="competencyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Competency Framework
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="competencyDropdown">
+                                <li><a class="dropdown-item" href="competency_framework.html"><i class="fas fa-info-circle me-2"></i>What is Competency Framework</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="trainer_comp_standard.html"><i class="fas fa-chalkboard-teacher me-2"></i>Trainer Competency Standard</a></li>
+                                <li><a class="dropdown-item" href="coach_comp_standard.html"><i class="fas fa-user-friends me-2"></i>Coach Competency Standard</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="ethical_standard.html">Ethics & Professional Standard</a>
+                        </li>                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="verificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Verification & Registry
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="verificationDropdown">
+                                <li><a class="dropdown-item" href="member_verification.html"><i class="fas fa-user-check me-2"></i>Member Verification</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#registry"><i class="fas fa-list-alt me-2"></i>Certified Professional Registry</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#validation"><i class="fas fa-certificate me-2"></i>Credential Validation</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#badge"><i class="fas fa-badge-check me-2"></i>Digital Badge Verification</a></li>
+                            </ul>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
         <!-- Audit & Monitoring Section -->
         <section class="padding-section bg-white">
@@ -512,11 +551,13 @@
     </main>
 
     <!-- Footer (Same as index) -->
-    <footer class="footer">
+    <footer class="footer bg-black">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="footer-logo mb-3">AAC LOGO</div>
+                    <div class="footer-logo mb-3">
+                        <img src="./images/logo.png" alt="">
+                    </div>
                     <p class="footer-text">Advancing the art, science, and practice of professional coaching globally through standard-setting and community building.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -530,25 +571,24 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="affiliation.html">Affiliation</a></li>
+                        <li><a href="affiliation.html">Resources</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
-                    <h5 class="footer-title">Membership</h5>
+                    <h5 class="footer-title">ASTC</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Professional Trainer</a></li>
-                        <li><a href="#">Fellow Coach</a></li>
-                        <li><a href="#">Associate Membership</a></li>
-                        <li><a href="#">Affiliation Programs</a></li>
+                        <li><a href="./competency_framework.html">Competency Framework</a></li>
+                        <li><a href="./membership.html">Membership</a></li>
+                        <li><a href="./partner_accreditation.html">Partner & Accreditation</a></li>
+                        <li><a href="./membership_renewal_upgrade.html">Membership Renewal & Upgrade</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4">
                     <h5 class="footer-title">Contact Us</h5>
                     <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Way, NY 10001</li>
                         <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
-                        <li><i class="fas fa-envelope"></i> info@aac-coaches.org</li>
+                        <li><i class="fas fa-envelope"></i> info@ASTC-coaches.org</li>
                     </ul>
                 </div>
             </div>

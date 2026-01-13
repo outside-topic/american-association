@@ -18,12 +18,35 @@
 <body>
  
     <!-- Header / Navbar -->
-    <header id="header" class="fixed-top">
-        <nav class="navbar navbar-expand-lg">
+    <header id="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="top-bar-left">
+                            <span class="top-bar-item"><i class="fas fa-envelope me-2"></i>info@astc-coaches.org</span>
+                            <span class="top-bar-item"><i class="fas fa-phone me-2"></i>+1 (234) 567-890</span>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="top-bar-right">
+                            <a href="about.html" class="top-bar-menu-link">About</a>
+                            <a href="resources.html" class="top-bar-menu-link">Resources</a>
+                            <a href="contact.html" class="top-bar-menu-link">Contact</a>
+                            <a href="partnership_accr.html" class="top-bar-menu-link">Partnership & Accreditation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
                     <div class="logo">
-                        <img src="./images/logo.png" alt="">
+                        <img src="./images/logo.png" alt="ASTC Logo">
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -31,36 +54,59 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item dropdown multilevel">
+                        
+                        
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="membershipDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Membership
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="membershipDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="membership-trainer.html">Trainer</a>                              
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="membership-coach.html">Coach</a>
-                                </li>
+                                <li><a class="dropdown-item" href="membership.html"><i class="fas fa-info-circle me-2"></i>What is Membership</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="membership.html#associate"><i class="fas fa-user-graduate me-2"></i>Associate Member</a></li>
+                                <li><a class="dropdown-item" href="membership.html#professional"><i class="fas fa-user-tie me-2"></i>Professional Member</a></li>
+                                <li><a class="dropdown-item" href="membership.html#fellow"><i class="fas fa-crown me-2"></i>Fellow Member</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="renewal_upgrade.html"><i class="fas fa-sync-alt me-2"></i>Renewal & Upgrade</a></li>
+                                <li><a class="dropdown-item" href="member_verification.html"><i class="fas fa-id-card me-2"></i>Member Verification</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="affiliation.html">Affiliation</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="competencyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Competency Framework
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="competencyDropdown">
+                                <li><a class="dropdown-item" href="competency_framework.html"><i class="fas fa-info-circle me-2"></i>What is Competency Framework</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="trainer_comp_standard.html"><i class="fas fa-chalkboard-teacher me-2"></i>Trainer Competency Standard</a></li>
+                                <li><a class="dropdown-item" href="coach_comp_standard.html"><i class="fas fa-user-friends me-2"></i>Coach Competency Standard</a></li>
+                            </ul>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="ethical_standard.html">Ethics & Professional Standard</a>
+                        </li>                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="verificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Verification & Registry
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="verificationDropdown">
+                                <li><a class="dropdown-item" href="member_verification.html"><i class="fas fa-user-check me-2"></i>Member Verification</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#registry"><i class="fas fa-list-alt me-2"></i>Certified Professional Registry</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#validation"><i class="fas fa-certificate me-2"></i>Credential Validation</a></li>
+                                <li><a class="dropdown-item" href="verification_reg.html#badge"><i class="fas fa-badge-check me-2"></i>Digital Badge Verification</a></li>
+                            </ul>
                         </li>
+
+                        
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
 
     <main>
         <!-- Hero Slider Section -->
@@ -74,7 +120,7 @@
                                     <h1 class="hero-title">Elevate Your Coaching Career</h1>
                                     <p class="hero-subtitle">World-class standards, global recognition, and a community of excellence.</p>
                                     <div class="hero-buttons">
-                                        <a href="./membership-coach.html" class="btn btn-primary btn-lg">Join AAC Today</a>
+                                        <a href="./membership-coach.html" class="btn btn-primary btn-lg">Join ASTC Today</a>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +133,7 @@
                                     <h1 class="hero-title">Empower the Next Generation of Leaders</h1>
                                     <p class="hero-subtitle">Deliver impactful training with accredited standards, professional growth, and global credibility</p>
                                     <div class="hero-buttons">
-                                        <a href="./membership-trainer.html" class="btn btn-primary btn-lg">Join AAC Today</a>
+                                        <a href="./membership-trainer.html" class="btn btn-primary btn-lg">Join ASTC Today</a>
                                     </div>
                                 </div>
                             </div>
@@ -100,8 +146,8 @@
                                     <h1 class="hero-title">Join a Network That Sets the Standard</h1>
                                     <p class="hero-subtitle">Exclusive membership benefits, international recognition, and lifelong professional advancement</p>
                                     <div class="hero-buttons">
-                                        <a href="./membership-coach.html" class="btn btn-primary btn-lg">AAC Coach</a>
-                                        <a href="./membership-trainer.html" class="btn btn-outline-light btn-lg">AAC Trainer</a>
+                                        <a href="./membership-coach.html" class="btn btn-primary btn-lg">ASTC Coach</a>
+                                        <a href="./membership-trainer.html" class="btn btn-outline-light btn-lg">ASTC Trainer</a>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +170,7 @@
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
                         <div class="about-preview-image position-relative">
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="About AAC" class="img-fluid rounded-4 shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" alt="About ASTC" class="img-fluid rounded-4 shadow-lg">
                             <div class="experience-badge">
                                 <span class="text"> Excellence in Training, Coaching, and Human Development</span>
                             </div>
@@ -457,14 +503,14 @@
                                 Designed for experienced practitioners actively working in training, coaching, or learning leadership roles.
                             </p>
                             
-                            <h5 class="text-color-primary mb-3" style="font-size: 1rem; font-weight: 600;">Ideal For:</h5>
+                            <h5 class="text-white mb-3" style="font-size: 1rem; font-weight: 600;">Ideal For:</h5>
                             <ul class="tier-features mb-4">
                                 <li><i class="fas fa-check-circle"></i> Corporate trainers and facilitators</li>
                                 <li><i class="fas fa-check-circle"></i> Coaches and consultants</li>
                                 <li><i class="fas fa-check-circle"></i> HR and L&D professionals</li>
                             </ul>
 
-                            <h5 class="text-color-primary mb-3" style="font-size: 1rem; font-weight: 600;">Key Benefits:</h5>
+                            <h5 class="text-white mb-3" style="font-size: 1rem; font-weight: 600;">Key Benefits:</h5>
                             <ul class="tier-features mb-4">
                                 <li><i class="fas fa-check-circle"></i> Full professional recognition</li>
                                 <li><i class="fas fa-check-circle"></i> Certification eligibility</li>
@@ -522,7 +568,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card">
                                 <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                                <p class="testimonial-text">"Becoming an AAC certified professional trainer was the turning point in my career. The global recognition and the quality of the network are truly unparalleled."</p>
+                                <p class="testimonial-text">"Becoming an ASTC certified professional trainer was the turning point in my career. The global recognition and the quality of the network are truly unparalleled."</p>
                                 <div class="testimonial-author">
                                     <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Member">
                                     <div class="author-info">
@@ -548,7 +594,7 @@
                         <div class="swiper-slide">
                             <div class="testimonial-card">
                                 <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                                <p class="testimonial-text">"As an Associate Coach, the mentorship I've received from the AAC community has been invaluable in building my practice ethically and effectively."</p>
+                                <p class="testimonial-text">"As an Associate Coach, the mentorship I've received from the ASTC community has been invaluable in building my practice ethically and effectively."</p>
                                 <div class="testimonial-author">
                                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Member">
                                     <div class="author-info">
@@ -584,7 +630,7 @@
                                 </h2>
                                 <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        To qualify for Trainer Membership, you must have a minimum of 3 years of instructional experience in coaching and hold a valid AAC professional designation or equivalent.
+                                        To qualify for Trainer Membership, you must have a minimum of 3 years of instructional experience in coaching and hold a valid ASTC professional designation or equivalent.
                                     </div>
                                 </div>
                             </div>
@@ -620,7 +666,7 @@
                                 </h2>
                                 <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
-                                        Absolutely. AAC certifications follow global standards in professional coaching and are recognized by major organizations and educational institutions worldwide.
+                                        Absolutely. ASTC certifications follow global standards in professional coaching and are recognized by major organizations and educational institutions worldwide.
                                     </div>
                                 </div>
                             </div>
@@ -641,11 +687,13 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer bg-black">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="footer-logo mb-3">AAC LOGO</div>
+                    <div class="footer-logo mb-3">
+                        <img src="./images/logo.png" alt="">
+                    </div>
                     <p class="footer-text">Advancing the art, science, and practice of professional coaching globally through standard-setting and community building.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -659,25 +707,24 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="affiliation.html">Affiliation</a></li>
+                        <li><a href="affiliation.html">Resources</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
-                    <h5 class="footer-title">Membership</h5>
+                    <h5 class="footer-title">ASTC</h5>
                     <ul class="footer-links">
-                        <li><a href="#">Professional Trainer</a></li>
-                        <li><a href="#">Fellow Coach</a></li>
-                        <li><a href="#">Associate Membership</a></li>
-                        <li><a href="#">Affiliation Programs</a></li>
+                        <li><a href="./competency_framework.html">Competency Framework</a></li>
+                        <li><a href="./membership.html">Membership</a></li>
+                        <li><a href="./partner_accreditation.html">Partner & Accreditation</a></li>
+                        <li><a href="./membership_renewal_upgrade.html">Membership Renewal & Upgrade</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-4">
                     <h5 class="footer-title">Contact Us</h5>
                     <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Way, NY 10001</li>
                         <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
-                        <li><i class="fas fa-envelope"></i> info@aac-coaches.org</li>
+                        <li><i class="fas fa-envelope"></i> info@ASTC-coaches.org</li>
                     </ul>
                 </div>
             </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | American Association for Coaches</title>
+    <title>Member Verification | American Society for Trainers and Coaches</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts - Inter & Playfair Display -->
@@ -110,126 +110,110 @@
         <section class="page-hero" style="background-image: linear-gradient(rgba(18, 29, 95, 0.9), rgba(18, 29, 95, 0.8)), url('images/hero_img_bg.png'); background-size: cover; background-position: center;">
             <div class="container">
                 <div class="hero-content text-center">
-                    <span class="d-inline-block py-1 px-3 border border-white text-white rounded-pill small mb-3">Knowledge Platform</span>
-                    <h1 class="display-3 fw-bold text-white mb-3">ASTC Research & Resources</h1>
-                    <p class="lead text-white opacity-90 mb-4">Value-added knowledge hub for ongoing professional excellence.</p>
+                    <h1 class="display-3 fw-bold text-white mb-3">Member Verification</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-                            <li class="breadcrumb-item active text-crimson" aria-current="page">Resources</li>
+                            <li class="breadcrumb-item active text-crimson" aria-current="page">Member Verification</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </section>
 
-        <!-- Overview Section -->
-        <section class="padding-section bg-white text-center">
+        <!-- Verification Search Section -->
+        <section class="padding-section bg-white">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <h2 class="section-title display-6 mb-4">A Comprehensive Knowledge Platform</h2>
-                        <p class="lead text-muted mb-4">
-                            The <strong class="text-color-primary">ASTC Resources Hub</strong> is designed to support trainers, coaches, learning leaders, HR professionals, consultants, and organizational development practitioners with high-quality professional content, research insights, practical tools, and industry intelligence.
-                        </p>
-                        <hr class="w-25 mx-auto border-crimson border-3 opacity-100 my-5">
-                    </div>
-                </div>
-                
-                <!-- Core Values Grid -->
-                <div class="row g-4 mt-2">
-                    <!-- Value 1 -->
-                    <div class="col-md-4">
-                        <div class="p-4 h-100 transition-all hover-up-5">
-                            <div class="icon-box icon-box-lg bg-light-alt text-color-primary rounded-circle mx-auto mb-4 shadow-sm" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-microscope fa-2x"></i>
-                            </div>
-                            <h4 class="fw-bold h5 mb-3">Evidence-Based Practice</h4>
-                            <p class="text-muted small">Our curated resources promote evidence-based methodologies and valid research to ensure credible application.</p>
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <span class="section-tag">Verify Credentials</span>
+                            <h2 class="section-title mb-4">Member Verification Portal</h2>
+                            <p class="section-desc">Enter the member ID to verify ASTC membership status and credentials.</p>
                         </div>
-                    </div>
-                    <!-- Value 2 -->
-                    <div class="col-md-4">
-                        <div class="p-4 h-100 transition-all hover-up-5 border-start border-end border-light">
-                            <div class="icon-box icon-box-lg bg-light-alt text-crimson rounded-circle mx-auto mb-4 shadow-sm" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-user-graduate fa-2x"></i>
+
+                        <div class="card border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                            <div class="card-body p-5">
+                                <div class="text-center mb-4">
+                                    <div class="feature-icon mb-3">
+                                        <i class="fas fa-id-card"></i>
+                                    </div>
+                                    <h3 class="text-color-primary mb-3">Search Member</h3>
+                                    <p class="text-muted">Enter the unique member ID to retrieve verification details</p>
+                                </div>
+                                
+                                <form id="verificationForm">
+                                    <div class="mb-4">
+                                        <label for="memberId" class="form-label fw-semibold">Member ID</label>
+                                        <input type="text" class="form-control form-control-lg" id="memberId" placeholder="Enter Member ID (e.g., ASTC-2024-12345)" required>
+                                        <div class="form-text">Member ID can be found on your membership certificate or profile.</div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-search me-2"></i> Verify Member
+                                    </button>
+                                </form>
+                                
+                                <div class="mt-4 p-3 rounded-3" style="background: rgba(18, 29, 95, 0.05);">
+                                    <p class="mb-0 small text-center">
+                                        <i class="fas fa-shield-check me-2 text-color-secondary"></i>
+                                        All verification results are real-time and sourced from ASTC's secure member database.
+                                    </p>
+                                </div>
                             </div>
-                            <h4 class="fw-bold h5 mb-3">Expert-Led Content</h4>
-                            <p class="text-muted small">Content developed by industry experts, academic contributors, and ASTC-certified professionals for accuracy.</p>
-                        </div>
-                    </div>
-                    <!-- Value 3 -->
-                    <div class="col-md-4">
-                        <div class="p-4 h-100 transition-all hover-up-5">
-                            <div class="icon-box icon-box-lg bg-light-alt text-color-secondary rounded-circle mx-auto mb-4 shadow-sm" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-arrow-trend-up fa-2x"></i>
-                            </div>
-                            <h4 class="fw-bold h5 mb-3">Professional Innovation</h4>
-                            <p class="text-muted small">Supporting continuous growth with actionable knowledge, implementation tools, and strategic insights.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Audience Strip -->
-        <section class="padding-section bg-light-alt">
+        <!-- Information Section -->
+        <section class="padding-section bg-light">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 mb-4 mb-lg-0">
-                        <span class="section-tag text-start">Who It's For</span>
-                        <h3 class="display-6 fw-bold mb-3">Supporting Professionals Across All Stages</h3>
-                        <p class="text-muted">The Resources Hub provides actionable knowledge aligned with global best practices for a diverse range of practitioners.</p>
-                        <a href="#" class="btn btn-primary mt-3 rounded-pill px-4">Explore All Resources</a>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-card text-center h-100">
+                            <i class="fas fa-lock feature-icon"></i>
+                            <h3>Secure Verification</h3>
+                            <p>All member data is encrypted and protected with industry-standard security protocols.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="row g-3 row-cols-2 row-cols-md-3">
-                            <div class="col">
-                                <div class="bg-white p-3 rounded-3 shadow-sm text-center h-100 border-bottom border-4 border-color-primary">
-                                    <i class="fas fa-chalkboard-teacher text-color-primary fa-2x mb-2 mt-2"></i>
-                                    <h6 class="fw-bold mb-0 small">Trainers</h6>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="bg-white p-3 rounded-3 shadow-sm text-center h-100 border-bottom border-4 border-crimson">
-                                    <i class="fas fa-user-tie text-crimson fa-2x mb-2 mt-2"></i>
-                                    <h6 class="fw-bold mb-0 small">Coaches</h6>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="bg-white p-3 rounded-3 shadow-sm text-center h-100 border-bottom border-4 border-color-secondary">
-                                    <i class="fas fa-users-gear text-color-secondary fa-2x mb-2 mt-2"></i>
-                                    <h6 class="fw-bold mb-0 small">HR Leaders</h6>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="bg-white p-3 rounded-3 shadow-sm text-center h-100 border-bottom border-4 border-dark">
-                                    <i class="fas fa-lightbulb text-dark fa-2x mb-2 mt-2"></i>
-                                    <h6 class="fw-bold mb-0 small">Consultants</h6>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="bg-white p-3 rounded-3 shadow-sm text-center h-100 border-bottom border-4 border-success">
-                                    <i class="fas fa-sitemap text-success fa-2x mb-2 mt-2"></i>
-                                    <h6 class="fw-bold mb-0 small">OD Pros</h6>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="bg-white p-3 rounded-3 shadow-sm text-center h-100 border-bottom border-4 border-info">
-                                    <i class="fas fa-graduation-cap text-info fa-2x mb-2 mt-2"></i>
-                                    <h6 class="fw-bold mb-0 small">Learning Leaders</h6>
-                                </div>
-                            </div>
+                    
+                    <div class="col-md-4">
+                        <div class="feature-card text-center h-100">
+                            <i class="fas fa-bolt feature-icon"></i>
+                            <h3>Instant Results</h3>
+                            <p>Get immediate verification status including membership level and validity period.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="feature-card text-center h-100">
+                            <i class="fas fa-certificate feature-icon"></i>
+                            <h3>Credential Details</h3>
+                            <p>View comprehensive information about certifications, specializations, and standing.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CTA Section -->
+        <section class="padding-section bg-color-secondary text-white text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4 text-white">Need Help with Verification?</h2>
+                        <p class="lead mb-5 opacity-75">Our support team is available to assist you with any verification inquiries.</p>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Support</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <!-- Footer (Same as index) -->
+    <!-- Footer -->
     <footer class="footer bg-black">
         <div class="container">
             <div class="row">
@@ -293,5 +277,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    
+    <script>
+        // Form submission handler
+        document.getElementById('verificationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const memberId = document.getElementById('memberId').value;
+            // Here you would typically make an API call to verify the member
+            alert('Verifying Member ID: ' + memberId);
+            // Add your verification logic here
+        });
+    </script>
 </body>
 </html>
