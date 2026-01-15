@@ -287,8 +287,8 @@
                         <h2 class="mb-4 text-white">Ready to Renew or Upgrade?</h2>
                         <p class="lead mb-5 opacity-75">Take the next step in your professional journey with ASTC.</p>
                         <div class="d-flex gap-3 justify-content-center flex-wrap">
-                            <a href="#" class="btn btn-outline-light btn-lg">Renew Membership</a>
-                            <a href="#" class="btn btn-light btn-lg">Apply for Upgrade</a>
+                            <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#renewModal">Renew Membership</button>
+                            <button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#upgradeModal">Apply for Upgrade</button>
                         </div>
                     </div>
                 </div>
@@ -296,6 +296,110 @@
         </section>
 
     </main>
+
+    <!-- Renew Membership Modal -->
+    <div class="modal fade" id="renewModal" tabindex="-1" aria-labelledby="renewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+                <div class="modal-header bg-color-primary text-white border-0 py-4" style="border-radius: 20px 20px 0 0;">
+                    <h5 class="modal-title fw-bold" id="renewModalLabel"><i class="fas fa-sync-alt me-2"></i>Renew Membership</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="renewForm">
+                        <div class="mb-3">
+                            <label for="renewName" class="form-label fw-semibold">Full Name</label>
+                            <input type="text" class="form-control rounded-pill px-4 py-2" id="renewName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="renewID" class="form-label fw-semibold">Membership ID</label>
+                            <input type="text" class="form-control rounded-pill px-4 py-2" id="renewID" placeholder="e.g. ASTC-123456" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="renewEmail" class="form-label fw-semibold">Registered Email</label>
+                            <input type="email" class="form-control rounded-pill px-4 py-2" id="renewEmail" placeholder="yourname@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="renewTier" class="form-label fw-semibold">Current Membership Tier</label>
+                            <select class="form-select rounded-pill px-4 py-2" id="renewTier" required>
+                                <option value="" selected disabled>Select your tier</option>
+                                <option value="associate">Associate Member</option>
+                                <option value="professional">Professional Member</option>
+                                <option value="fellow">Fellow Member</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="cpdConfirm" required>
+                                <label class="form-check-label small text-muted" for="cpdConfirm">
+                                    I confirm that I have fulfilled the annual CPD requirements as per the ASTC policy.
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-crimson w-100 rounded-pill py-3 fw-bold shadow-sm">Submit Renewal Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apply for Upgrade Modal -->
+    <div class="modal fade" id="upgradeModal" tabindex="-1" aria-labelledby="upgradeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+                <div class="modal-header bg-color-primary text-white border-0 py-4" style="border-radius: 20px 20px 0 0;">
+                    <h5 class="modal-title fw-bold" id="upgradeModalLabel"><i class="fas fa-arrow-up me-2"></i>Apply for Membership Upgrade</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="upgradeForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="upgradeName" class="form-label fw-semibold">Full Name</label>
+                                <input type="text" class="form-control rounded-pill px-4 py-2" id="upgradeName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="upgradeID" class="form-label fw-semibold">Membership ID</label>
+                                <input type="text" class="form-control rounded-pill px-4 py-2" id="upgradeID" placeholder="e.g. ASTC-123456" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="upgradeEmail" class="form-label fw-semibold">Registered Email</label>
+                            <input type="email" class="form-control rounded-pill px-4 py-2" id="upgradeEmail" placeholder="yourname@example.com" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="currentTier" class="form-label fw-semibold">Current Tier</label>
+                                <select class="form-select rounded-pill px-4 py-2" id="currentTier" required>
+                                    <option value="" selected disabled>Select current</option>
+                                    <option value="associate">Associate Member</option>
+                                    <option value="professional">Professional Member</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="targetTier" class="form-label fw-semibold">Target Tier</label>
+                                <select class="form-select rounded-pill px-4 py-2" id="targetTier" required>
+                                    <option value="" selected disabled>Select target</option>
+                                    <option value="professional">Professional Member</option>
+                                    <option value="fellow">Fellow Member</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="upgradeJustification" class="form-label fw-semibold">Justification for Upgrade</label>
+                            <textarea class="form-control px-4 py-3" id="upgradeJustification" rows="4" style="border-radius: 15px;" placeholder="Briefly describe why you qualify for the higher membership tier..." required></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label for="supportingDocs" class="form-label fw-semibold">Supporting Evidence (ZIP/PDF)</label>
+                            <input class="form-control" type="file" id="supportingDocs" style="border-radius: 15px;" required>
+                            <div class="form-text text-muted">Attach certifications, workshop proof, or experience letters.</div>
+                        </div>
+                        <button type="submit" class="btn btn-crimson w-100 rounded-pill py-3 fw-bold shadow-sm">Submit Upgrade Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer bg-black">

@@ -257,69 +257,79 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="joinFormModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-header bg-color-primary">
-                    <h1 class="modal-title text-white fs-5" id="exampleModalLabel">Member Application</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="joinFormModal" tabindex="-1" aria-labelledby="joinFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+                <div class="modal-header bg-color-primary text-white border-0 py-4" style="border-radius: 20px 20px 0 0;">
+                    <h5 class="modal-title fw-bold" id="joinFormModalLabel"><i class="fas fa-user-plus me-2 text-warning"></i>Member Application</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body py-5">
-                    <form class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="input-group">
-                                <input class="form-control form-control" type="text" placeholder="Full Name" name="name" aria-label=".form-control-lg example">
+                <div class="modal-body p-5">
+                    <form id="applyForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label class="form-label fw-semibold">Full Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-0 rounded-start-pill px-3"><i class="fas fa-user text-muted"></i></span>
+                                    <input type="text" class="form-control bg-light border-0 rounded-end-pill px-3 py-2" placeholder="John Doe" name="name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="form-label fw-semibold">Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-0 rounded-start-pill px-3"><i class="fas fa-envelope text-muted"></i></span>
+                                    <input type="email" class="form-control bg-light border-0 rounded-end-pill px-3 py-2" placeholder="john@example.com" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="form-label fw-semibold">Phone Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-0 rounded-start-pill px-3"><i class="fas fa-phone text-muted"></i></span>
+                                    <input type="tel" class="form-control bg-light border-0 rounded-end-pill px-3 py-2" placeholder="+1 (234) 567-890" name="phone_number" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="form-label fw-semibold">Membership Tier</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-0 rounded-start-pill px-3"><i class="fas fa-layer-group text-muted"></i></span>
+                                    <select name="membership_type" class="form-select bg-light border-0 rounded-end-pill px-3 py-2" required>
+                                        <option value="" selected disabled>Select Membership</option>
+                                        <option value="associate">Associate Membership</option>
+                                        <option value="professional">Professional Membership</option>
+                                        <option value="fellow">Fellow Membership</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="form-label fw-semibold">Country</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-0 rounded-start-pill px-3"><i class="fas fa-globe text-muted"></i></span>
+                                    <input type="text" class="form-control bg-light border-0 rounded-end-pill px-3 py-2" placeholder="Your Country" name="country" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label class="form-label fw-semibold">Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-0 rounded-start-pill px-3"><i class="fas fa-map-marker-alt text-muted"></i></span>
+                                    <input type="text" class="form-control bg-light border-0 rounded-end-pill px-3 py-2" placeholder="Your Street Address" name="address" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                                <label class="form-label fw-semibold">Member Photo</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-0 rounded-start-pill px-3"><i class="fas fa-image text-muted"></i></span>
+                                    <input name="member_image" type="file" class="form-control bg-light border-0 rounded-end-pill px-3 py-2" id="inputGroupFile01" required>
+                                </div>
+                                <div class="form-text mt-2 ps-2">Please upload a professional headshot (JPG/PNG).</div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="input-group">
-                                <input class="form-control form-control" type="email" placeholder="Email" name="email" aria-label=".form-control-lg example">
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="input-group">
-                                <input class="form-control form-control" type="number" placeholder="Phone Number" name="phone_number" aria-label=".form-control-lg example">
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="input-group">
-                                <select name="membership_type" class="form-select" aria-label="Default select example">
-                                    <option selected>Select Membership</option>
-                                    <option value="1">Associate Membership</option>
-                                    <option value="2">Professional Membership</option>
-                                    <option value="3">Fellow Membership</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="input-group">
-                                <input class="form-control form-control" type="text" placeholder="Country Name" name="country" aria-label=".form-control-lg example">
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="input-group">
-                                <input class="form-control form-control" name="address" type="text" placeholder="Address" aria-label=".form-control-lg example">
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="input-group">
-                                <input class="form-control form-control" name="password" type="text" placeholder="Password" aria-label=".form-control-lg example">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="input-group">
-                                <label class="input-group-text" for="inputGroupFile01">Member Image</label>
-                                <input name="member_image" type="file" class="form-control" id="inputGroupFile01">
-                            </div>
+                        <div class="mt-4 pt-2">
+                            <button type="submit" class="btn btn-crimson w-100 rounded-pill py-3 fw-bold shadow-sm">Submit Membership Application</button>
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
-                </div>
             </div>
+        </div>
     </div>
 
     <!-- Scripts -->

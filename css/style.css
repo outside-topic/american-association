@@ -2246,3 +2246,22 @@ header {
         z-index: 0;
     }
 }
+
+/* Custom Buttons */
+.btn-crimson {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transition: var(--transition);
+    border: none;
+}
+
+.btn-crimson:hover {
+    background-color: #a0002e;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(199, 0, 57, 0.3);
+}
+
+.bg-crimson-light {
+    background-color: rgba(199, 0, 57, 0.1);
+}
