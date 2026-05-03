@@ -172,6 +172,197 @@
             </div>
         </section>
 
+        <section class="padding-section text-center">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2 class="section-title display-6 mb-4">Free Resources</h2>
+                        <p class="lead text-muted mb-4">
+                            Download <strong class="text-color-primary">ASTC Resources</strong> For Free.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        
+                        <div class="m-res-card-wrapper">
+                            <div class="m-res-card-container">
+                                <span class="m-res-status-tag">FREE</span>
+                                
+                                <div class="m-res-visual-header">
+                                    <i class="fa-solid fa-file-pdf m-res-main-glyph"></i>
+                                    
+                                    <!-- Unique Lock Overlay -->
+                                    <div class="m-res-lock-shield">
+                                        <div class="m-res-lock-circle">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </div>
+                                        <span class="m-res-lock-label">Free Resource</span>
+                                    </div>
+                                </div>
+
+                                <div class="m-res-body-content">
+                                    <h3 class="m-res-title-text">Premium Design Guide</h3>
+                                    <p class="m-res-desc-text">
+                                        Master the art of modern UI/UX with our comprehensive guide. Includes 50+ pages of expert tips, case studies, and practical exercises.
+                                    </p>
+                                    <button data-bs-toggle="modal" data-bs-target="#resourceAccessModal" class="m-res-action-btn">
+                                        <i class="fa-solid fa-download"></i> Download Now
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="m-res-card-wrapper">
+                            <div class="m-res-card-container">
+                                <span class="m-res-status-tag">FREE</span>
+                                
+                                <div class="m-res-visual-header">
+                                    <i class="fa-solid fa-file-pdf m-res-main-glyph"></i>
+                                    
+                                    <!-- Unique Lock Overlay -->
+                                    <div class="m-res-lock-shield">
+                                        <div class="m-res-lock-circle">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </div>
+                                        <span class="m-res-lock-label">Locked Resource</span>
+                                    </div>
+                                </div>
+
+                                <div class="m-res-body-content">
+                                    <h3 class="m-res-title-text">Premium Design Guide</h3>
+                                    <p class="m-res-desc-text">
+                                        Master the art of modern UI/UX with our comprehensive guide. Includes 50+ pages of expert tips, case studies, and practical exercises.
+                                    </p>
+                                    <button class="m-res-action-btn" disabled>
+                                        <i class="fa-solid fa-download"></i> Download Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="m-res-card-wrapper">
+                            <div class="m-res-card-container">
+                                <span class="m-res-status-tag">FREE</span>
+                                
+                                <div class="m-res-visual-header">
+                                    <i class="fa-solid fa-file-pdf m-res-main-glyph"></i>
+                                    
+                                    <!-- Unique Lock Overlay -->
+                                    <div class="m-res-lock-shield">
+                                        <div class="m-res-lock-circle">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </div>
+                                        <span class="m-res-lock-label">Locked Resource</span>
+                                    </div>
+                                </div>
+
+                                <div class="m-res-body-content">
+                                    <h3 class="m-res-title-text">Premium Design Guide</h3>
+                                    <p class="m-res-desc-text">
+                                        Master the art of modern UI/UX with our comprehensive guide. Includes 50+ pages of expert tips, case studies, and practical exercises.
+                                    </p>
+                                    <button class="m-res-action-btn" disabled>
+                                        <i class="fa-solid fa-download"></i> Download Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- resource modal -->
+        <div class="modal fade" id="resourceAccessModal" tabindex="-1" aria-labelledby="resourceAccessModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content m-res-modal-content">
+                    <div class="m-res-modal-header">
+                        <h2 class="m-res-modal-title" id="resourceAccessModalLabel">Unlock Free Resource</h2>
+                        <p class="m-res-modal-subtitle">Please provide your details to get instant access to the download.</p>
+                        <button type="button" class="m-res-modal-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="m-res-modal-body">
+                        <form id="m-res-access-form">
+                            <div class="m-res-form-row">
+                                <!-- Name -->
+                                <div class="m-res-form-col m-res-form-group">
+                                    <label class="m-res-form-label">Full Name</label>
+                                    <div class="m-res-input-icon-wrapper">
+                                        <i class="fa-solid fa-user"></i>
+                                        <input type="text" class="m-res-form-input m-res-input-with-icon" placeholder="John Doe" required>
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="m-res-form-col m-res-form-group">
+                                    <label class="m-res-form-label">Email Address</label>
+                                    <div class="m-res-input-icon-wrapper">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <input type="email" class="m-res-form-input m-res-input-with-icon" placeholder="john@example.com" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-res-form-row">
+                                <!-- Country -->
+                                <div class="m-res-form-col m-res-form-group">
+                                    <label class="m-res-form-label">Country</label>
+                                    <div class="m-res-input-icon-wrapper">
+                                        <i class="fa-solid fa-globe"></i>
+                                        <input type="text" class="m-res-form-input m-res-input-with-icon" placeholder="United States" required>
+                                    </div>
+                                </div>
+                                <!-- WhatsApp -->
+                                <div class="m-res-form-col m-res-form-group">
+                                    <label class="m-res-form-label">WhatsApp Number</label>
+                                    <div class="m-res-input-icon-wrapper">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <input type="tel" class="m-res-form-input m-res-input-with-icon" placeholder="+1 234 567 890" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="m-res-form-row">
+                                <!-- Organization -->
+                                <div class="m-res-form-col m-res-form-group">
+                                    <label class="m-res-form-label">Organization</label>
+                                    <div class="m-res-input-icon-wrapper">
+                                        <i class="fa-solid fa-building"></i>
+                                        <input type="text" class="m-res-form-input m-res-input-with-icon" placeholder="Company Name" required>
+                                    </div>
+                                </div>
+                                <!-- Designation -->
+                                <div class="m-res-form-col m-res-form-group">
+                                    <label class="m-res-form-label">Designation</label>
+                                    <div class="m-res-input-icon-wrapper">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <input type="text" class="m-res-form-input m-res-input-with-icon" placeholder="Lead Designer" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="m-res-submit-btn">
+                                Get Access Now <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Audience Strip -->
         <section class="padding-section bg-light-alt">
             <div class="container">
