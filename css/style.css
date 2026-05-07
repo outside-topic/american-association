@@ -13,6 +13,10 @@
     --glass-border: rgba(255, 255, 255, 0.2);
     --text-light: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.8);
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --astc-border: #f3f4f6;
+    --astc-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -26,7 +30,7 @@ body {
 }
 
 .bg-color-primary {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
 }
 
 .bg-color-secondary {
@@ -3353,3 +3357,199 @@ resource design end
 }
 
 /* ============ member eligibility criteria page design end ============ */
+
+/* ============ astc trainer framework page start ============ */
+
+.astc-v3-main {
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+}
+
+
+.astc-v3-main .astc-hero::after{
+    background-color: var(--light-bg);
+}
+
+
+/* Main Content Area */
+
+
+/* Section Styling */
+.astc-v3-section {
+    margin-bottom: 100px;
+}
+
+.astc-v3-section-header {
+    margin-bottom: 40px;
+}
+
+.astc-v3-section-header h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.astc-v3-section-header p {
+    font-size: 1.1rem;
+    max-width: 800px;
+}
+
+/* Bento Grid Layout */
+.astc-v3-bento-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+.astc-v3-bento-item {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    border: 1px solid var(--astc-border);
+    box-shadow: var(--astc-shadow);
+}
+
+.astc-v3-bento-item h4 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.astc-v3-bento-item h4 i {
+    color: var(--primary-color);
+}
+
+.astc-list-bg{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.astc-list-bg li{
+    background-color: rgba(18, 29, 95, 1);
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #ffffffda;
+}
+
+.pill-bg-blur-white{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 8px;
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+}
+
+/* Grid Spans */
+.astc-v3-span-12 {
+    grid-column: span 12;
+}
+
+.astc-v3-span-8 {
+    grid-column: span 8;
+}
+
+.astc-v3-span-6 {
+    grid-column: span 6;
+}
+
+.astc-v3-span-4 {
+    grid-column: span 4;
+}
+
+/* List Styling */
+.astc-v3-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.astc-v3-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f9fafb;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.95rem;
+}
+
+.astc-v3-list li:last-child {
+    border-bottom: none;
+}
+
+.astc-v3-list li i {
+    color: var(--secondary-color);
+    margin-top: 4px;
+}
+
+/* Specialized Bento Items */
+.astc-v3-bento-rpc {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 100%);
+    color: white;
+    border: none;
+}
+
+.astc-v3-bento-rpc h4,
+.astc-v3-bento-rpc i {
+    color: white !important;
+}
+
+.astc-v3-bento-rpc p {
+    opacity: 0.9;
+}
+
+.astc-v3-bento-docs {
+    background: #fff7ed;
+    border-color: #ffedd5;
+}
+
+.astc-v3-bento-docs h4 {
+    color: #9a3412;
+}
+
+/* General Requirements Section */
+.astc-v3-general-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.astc-v3-gen-card {
+    background: white;
+    padding: 24px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    border: 1px solid var(--astc-border);
+}
+
+.astc-v3-gen-card i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .astc-v3-sidebar {
+        display: none;
+    }
+
+    .astc-v3-main {
+        padding: 40px 20px;
+    }
+
+    .astc-v3-span-8,
+    .astc-v3-span-4,
+    .astc-v3-span-6 {
+        grid-column: span 12;
+    }
+}
+
+
+/* ============ astc trainer framework page end ============ */
